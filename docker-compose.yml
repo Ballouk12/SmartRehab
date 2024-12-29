@@ -1,0 +1,45 @@
+# version: '3.8'
+services:
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: heath_db
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    networks:
+      - app-network
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  backend:
+    build: ./MobileFinalBackend
+    ports:
+      - "8083:8083"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/heath_db
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    depends_on:
+      - mysql
+    networks:
+      - app-network
+
+  frontend:
+    build: ./frontendApp
+    ports:
+      - "5173:5173"
+    networks:
+      - app-network
+    environment:
+      - VITE_API_URL=http://localhost:8083  # Modifié pour pointer vers localhost
+    depends_on:
+      - backend
+    command: npm run dev -- --host  # Corrigé: --host au lieu de --hosts
+
+volumes:
+  mysql_data:
+
+networks:
+  app-network:
+    driver: bridge

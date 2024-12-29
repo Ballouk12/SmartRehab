@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="180dp"
+    android:viewportWidth="200"
+    android:viewportHeight="180">
+
+    <!-- Background gradient -->
+    <path
+        android:fillColor="#4361EE"
+        android:pathData="M0,0h200v180h-200z"/>
+
+    <!-- Fitness equipment silhouettes -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.2"
+        android:pathData="M40,90h120v10h-120z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.2"
+        android:pathData="M30,80a10,10 0 1,0 20,0a10,10 0 1,0 -20,0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.2"
+        android:pathData="M150,80a10,10 0 1,0 20,0a10,10 0 1,0 -20,0"/>
+</vector>
