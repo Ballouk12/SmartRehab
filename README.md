@@ -1,6 +1,6 @@
 # Smart Rehab: Intelligent Rehabilitation
 
-Smart Rehab is a platform designed to enhance physical rehabilitation by leveraging real-time pose detection, motion analysis, and tailored recommendations. By integrating open-source pose estimation algorithms and patient-specific thresholds, Smart Rehab empowers users and therapists with actionable insights to optimize recovery and prevent improper movements during rehabilitation exercises.
+Smart Rehab is a platform designed to enhance physical rehabilitation by leveraging real-time pose detection, motion analysis, and tailored recommendations. By integrating open-source pose estimation algorithms and patient-specific thresholds, Smart Rehab empowers users and therapists with actionable insights to optimize recovery and prevent improper movements during rehabilitation exercises..
 
 ## Table of Contents
 
