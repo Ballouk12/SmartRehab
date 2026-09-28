@@ -15,7 +15,7 @@ Smart Rehab is a platform designed to enhance physical rehabilitation by leverag
 # Software Architecture
 ![archit](https://github.com/user-attachments/assets/d6ca1f9a-50a8-4110-9927-1663bf4510f7)
 
-The application architecture consists of:
+The application architecture consists of :
 - *Frontend*: Vite.js for the web interface and java for mobile clients.
 - *Backend*: Spring Boot for core services .
 - *Communication*: RESTful APIs 
